@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte Técnico</title>
+    <link rel="stylesheet" href="soporte.css">
+</head>
+<body>
+    <header>
+        <h1>Soporte Técnico</h1>
+    </header>
+    <main>
+        <section class="intro">
+            <p>Bienvenido a nuestro centro de soporte técnico. Aquí encontrarás toda la ayuda necesaria para resolver tus problemas.</p>
+        </section>
+        <section class="report-issue">
+            <h2>Reportar un Problema</h2>
+            <form>
+                <label for="issue-type">Tipo de Problema:</label>
+                <select id="issue-type" name="issue-type">
+                    <option value="equipo">Problema con equipo</option>
+                    <option value="monitoreo">Problema con el sistema de monitoreo</option>
+                    <option value="riego">Riego insuficiente</option>
+                    <option value="otro">Otro</option>
+                </select>
+                
+                <label for="issue-details">Detalles del Problema:</label>
+                <textarea id="issue-details" name="issue-details" rows="4" placeholder="Describe el problema aquí..."></textarea>
+                
+                <button type="submit">Enviar Reporte</button>
+            </form>
+        </section>
+        <section class="support-options">
+            <div class="support-item">
+                <h2>Preguntas Frecuentes</h2>
+                <img src="../imagenes/PF.png" alt="Preguntas Frecuentes">
+                <p>Respuestas a las preguntas más comunes de nuestros usuarios.</p>
+                <button onclick="location.href='faq.html'">Ver Más</button>
+            </div>
+            <div class="support-item">
+                <h2>Guías y Tutoriales</h2>
+                <img src="../imagenes/GYI.png" alt="Guías y Tutoriales">
+                <p>Accede a recursos detallados y guías paso a paso.</p>
+                <button onclick="location.href='guides.html'">Explorar</button>
+            </div>
+            <div class="support-item">
+                <h2>Foro de la Comunidad</h2>
+                <img src="../imagenes/CO.png" alt="Foro de la Comunidad">
+                <p>Únete a nuestra comunidad para compartir experiencias y soluciones.</p>
+                <button onclick="location.href='forum.html'">Participar</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

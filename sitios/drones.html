@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración de Drones</title>
+    <link rel="stylesheet" href="dron.css">
+</head>
+<body>
+    <header>
+        <h1>Configuración de Drones</h1>
+    </header>
+    <main>
+        <h2>Personaliza tu Dron</h2>
+        <form>
+            <label for="tiempo-riego">Tiempo de Riego (minutos):</label>
+            <input type="number" id="tiempo-riego" name="tiempo-riego" min="1" max="60" required>
+
+            <label for="lugar-vuelo">Lugar de Vuelo:</label>
+            <input type="text" id="lugar-vuelo" name="lugar-vuelo" required>
+
+            <h3>Configuraciones Básicas</h3>
+            <label for="velocidad">Velocidad (km/h):</label>
+            <input type="number" id="velocidad" name="velocidad" min="10" max="100" required>
+
+            <label for="altura">Altura de Vuelo (metros):</label>
+            <input type="number" id="altura" name="altura" min="1" max="120" required>
+
+            <label for="modo-vuelo">Modo de Vuelo:</label>
+            <select id="modo-vuelo" name="modo-vuelo">
+                <option value="automatico">Automático</option>
+                <option value="manual">Manual</option>
+            </select>
+
+            <label for="camara">Activar Cámara:</label>
+            <input type="checkbox" id="camara" name="camara">
+
+            <button type="submit">Guardar Configuración</button>
+        </form>
+    </main>
+</body>
+</html>

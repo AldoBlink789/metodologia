@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('imagenesP/Green.jpg'); /* Ruta de tu imagen de fondo */
+    background-size: cover; /* Ajusta la imagen al tamaño del viewport */
+    background-position: center; /* Centra la imagen */
+    display: flex;
+    justify-content: flex-start; /* Alineación a la izquierda */
+    align-items: flex-end; /* Alineación en la esquina inferior */
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0); /* Fondo blanco con transparencia */
+    padding: 40px; /* Aumentamos el padding para espacio interno */
+    border-radius: 12px;
+    width: 700px; /* Ancho del contenedor */
+    max-height: 50vh; /* Altura máxima del contenedor */
+    overflow-y: auto; /* Agrega scroll si el contenido es mayor a la altura máxima */
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.login-form label {
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"],
+.login-form input[type="submit"] {
+    padding: 14px; /* Aumentamos el padding de los elementos */
+    margin-bottom: 12px; /* Espacio entre elementos */
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, background-color 0.3s, color 0.3s; /* Transiciones suaves */
+}
+
+.login-form input[type="submit"] {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.login-form input[type="submit"]:hover {
+    background-color: #45a049; /* Verde más oscuro al hacer hover */
+}
+
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus,
+.login-form input[type="submit"]:hover {
+    outline: none;
+    border-color: #4CAF50; /* Color de borde al hacer focus */
+}
+
+.login-form input[type="submit"]:active {
+    background-color: #3e8746; /* Color de fondo al hacer click */
+}

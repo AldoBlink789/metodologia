@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Pago</title>
+    <link rel="stylesheet" href="pago.css"> <!-- Enlazar tu hoja de estilos aquí -->
+</head>
+<body>
+
+<div class="navbar">
+    <ul>
+        <li><a href="principal.html">Inicio</a></li>
+        <li><a href="servicio.html">Servicios</a></li>
+        <li><a href="acercade.html">Acerca de</a></li>
+        <!-- Añadir más elementos según tu estructura de navegación -->
+    </ul>
+</div>
+
+<div class="container">
+    <h2>Formulario de Pago</h2>
+    <div class="monto">
+        <label>Monto a pagar:</label>
+        <span>$100.00</span> <!-- Aquí puedes ajustar el monto fijo -->
+    </div>
+    <form>
+
+        <label for="tarjeta">Número de tarjeta:</label><br>
+        <input type="text" id="tarjeta" name="tarjeta" required><br><br>
+        
+        <label for="vencimiento">Fecha de vencimiento:</label><br>
+        <input type="text" id="vencimiento" name="vencimiento" required placeholder="MM/AA"><br><br>
+        
+        <label for="cvv">CVV:</label><br>
+        <input type="text" id="cvv" name="cvv" required><br><br>
+        
+        <p>Al dar pagar, se le cobrara el monto a su tarjeta y se le contactara en un plazo de 15 dias para la instalacion del servicio</p>
+        <input type="submit" value="Pagar">
+    </form>
+</div>
+

@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('imagenesP/fondo.jpg'); /* Ruta de tu imagen de fondo */
+    background-size: cover; /* Ajusta la imagen al tamaño del viewport */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    margin: 0;
+    padding-top: 60px; /* Espacio para el nav (ajustar según sea necesario) */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.navbar {
+    background-color: #ffffff; /* Color de fondo oscuro */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgb(99, 238, 81); /* Sombra ligera */
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline-block; /* Cambiado a inline-block para mejor alineación */
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    color: #10ff08;
+    text-decoration: none;
+    padding: 10px 20px; /* Aumentado el padding para un área de clic más grande */
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+    text-transform: uppercase; /* Mayúsculas */
+    letter-spacing: 1px; /* Espaciado entre letras */
+    transition: background-color 0.3s ease; /* Transición suave en el hover */
+}
+
+.navbar ul li a:hover {
+    background-color: #45a049; /* Color de fondo más oscuro en hover */
+    border-radius: 4px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+    background-color: #f2f9f200;
+}
+
+.box {
+    width: calc(33.33% - 2rem); /* Tamaño para 3 en una fila */
+    max-width: 300px; /* Ancho máximo para evitar que se extiendan demasiado */
+    background-color: #ffffffb2;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ffffffbd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.box-content {
+    padding: 1rem;
+}
+
+.box-content h3 {
+    margin: 0 0 0.5rem;
+    color: #333333;
+    font-size: 1.2rem;
+}
+
+.box-content p {
+    margin: 0;
+    color: #666666;
+    font-size: 1rem;
+}
+
+/* Media queries */
+@media (max-width: 1024px) {
+    .box {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media (max-width: 600px) {
+    .box {
+        width: calc(100% - 2rem);
+    }
+}

@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('imagenesP/fondo.jpg'); /* Ruta de tu imagen de fondo */
+    background-size: cover; /* Ajusta la imagen al tamaño del viewport */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    margin: 0;
+    padding-top: 60px; /* Espacio para el nav (ajustar según sea necesario) */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.navbar {
+    background-color: #ffffff; /* Color de fondo oscuro */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgb(99, 238, 81); /* Sombra ligera */
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline-block; /* Cambiado a inline-block para mejor alineación */
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    color: #10ff08;
+    text-decoration: none;
+    padding: 10px 20px; /* Aumentado el padding para un área de clic más grande */
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+    text-transform: uppercase; /* Mayúsculas */
+    letter-spacing: 1px; /* Espaciado entre letras */
+    transition: background-color 0.3s ease; /* Transición suave en el hover */
+}
+
+.navbar ul li a:hover {
+    background-color: #45a049; /* Color de fondo más oscuro en hover */
+    border-radius: 4px;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #c8e6c9; /* Borde verde más suave */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #4CAF50; /* Verde principal */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #c8e6c9; /* Borde verde más suave */
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50; /* Verde principal */
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /* Verde más oscuro al hacer hover */
+}
+
+/* Estilos específicos para etiquetas y campos */
+#nombre-label,
+#direccion-label,
+#codigo-label,
+#correo-label,
+#constancia-label,
+#intervalo-label,
+#otras_especificaciones-label {
+    font-size: 18px;
+    color: #4CAF50; /* Verde principal */
+}

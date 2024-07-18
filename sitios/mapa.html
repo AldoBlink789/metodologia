@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa del Terreno</title>
+    <link rel="stylesheet" href="mapa.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Mapa del Terreno</h1>
+        </header>
+        <section class="map-section">
+            <img src="../imagenes/mapa.png" alt="Mapa del Terreno" class="map-image">
+            <div class="route-config">
+                <h2>Configuración de Ruta</h2>
+                <form>
+                    <label for="start-point">Punto de inicio:</label>
+                    <input type="text" id="start-point" name="start-point">
+
+                    <label for="end-point">Punto final:</label>
+                    <input type="text" id="end-point" name="end-point">
+
+                    <label for="route-type">Tipo de ruta:</label>
+                    <select id="route-type" name="route-type">
+                        <option value="direct">Directa</option>
+                        <option value="scenic">Paisajística</option>
+                        <option value="fastest">Más rápida</option>
+                    </select>
+
+                    <button type="submit">Calcular Ruta</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

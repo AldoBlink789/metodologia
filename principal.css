@@ -1,0 +1,71 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('imagenesP/233.jpg'); /* Ruta de tu imagen de fondo */
+    background-size: cover; /* Ajusta la imagen al tamaño del viewport */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    margin: 0;
+    padding-top: 60px; /* Espacio para el nav (ajustar según sea necesario) */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Estilos del navbar */
+.navbar {
+    background-color: #ffffff; /* Color de fondo oscuro */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgb(99, 238, 81); /* Sombra ligera */
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline-block; /* Cambiado a inline-block para mejor alineación */
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    color: #10ff08;
+    text-decoration: none;
+    padding: 10px 20px; /* Aumentado el padding para un área de clic más grande */
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+    text-transform: uppercase; /* Mayúsculas */
+    letter-spacing: 1px; /* Espaciado entre letras */
+    transition: background-color 0.3s ease; /* Transición suave en el hover */
+}
+
+.navbar ul li a:hover {
+    background-color: #45a049; /* Color de fondo más oscuro en hover */
+    border-radius: 4px;
+}
+
+
+.container {
+    position: relative;
+    text-align: center;
+}
+.button {
+    position: fixed;
+    top: 250px; /* Ajusta esta posición según sea necesario */
+    left: 60%; /* Ajusta esta posición según sea necesario */
+    width: 600px; /* Ajusta el tamaño según sea necesario */
+    height: 550px; /* Ajusta el tamaño según sea necesario */
+    background-color: rgba(255, 255, 255, 0); /* Fondo semitransparente */
+    cursor: pointer;
+    border: none;
+    font-size: 16px; /* Tamaño de fuente */
+    color: white; /* Color del texto */
+}

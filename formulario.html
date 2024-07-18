@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Servicio</title>
+    <link rel="stylesheet" href="formulario.css"> <!-- Asegúrate de enlazar tu hoja de estilos aquí -->
+</head>
+<body>
+
+<div class="navbar">
+    <ul>
+        <li><a href="principal.html">Inicio</a></li>
+        <li><a href="servicio.html">Servicios</a></li>
+        <li><a href="acercade.html">Acerca de</a></li>
+        <!-- Puedes añadir más elementos según tu estructura de navegación -->
+    </ul>
+</div>
+
+<div class="container">
+    <h2>Formulario de Servicio</h2>
+    <form action="pago.html" method="POST">
+        <label for="nombre">Nombre y Apellidos completos:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        
+        <label for="direccion">Dirección del Lugar:</label><br>
+        <textarea id="direccion" name="direccion" rows="4" required></textarea><br><br>
+        
+        <label for="codigo">Código postal :</label><br>
+        <input type="text" id="codigo" name="codigo" required><br><br>
+        
+        <label for="correo">Correo Electrónico:</label><br>
+        <input type="email" id="correo" name="correo" required><br><br>
+        
+        <label for="constancia">Numero de documentacion:</label><br>
+        <input type="text" id="iden" name="iden" required><br><br>
+        
+        <label for="intervalo">Tamaño del lugar</label><br>
+        <input type="text" id="intervalo" name="intervalo" required><br><br>
+        
+        <label for="otras_especificaciones">Otras Especificaciones:</label><br>
+        <textarea id="otras_especificaciones" name="otras_especificaciones" rows="4"></textarea><br><br>
+    </form>
+    <button class="button" onclick="location.href='pago.html'">
+        <p>Enviar</p>
+    </button>
+</div>
+</body>
+</html>
